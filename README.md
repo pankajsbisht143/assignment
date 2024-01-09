@@ -1,14 +1,14 @@
 <h1>PETERS SURGICAL</h1>
-<h2>Live Link- https://effulgent-melba-8ff631.netlify.app/ </h2> 
-<h3>Project Presentation Link - https://drive.google.com/file/d/1UTwlkfRk9RiymhkJnrKPSd4mwxVSKBdA/view?usp=sharing</h3>
+<h2>Live Link-  </h2> 
+<h3>Project Presentation Link - </h3>
 
 # Peter Surgical React App
 
-Welcome to the Peter Surgical React application! This README provides instructions on how to pull the repository and run the code locally.
+
 
 ## Project Overview
 
-This project is built using React, Redux, HTML, CSS, JavaScript, Chakra-UI, Chart.js, and includes table components.
+This project is built using React, Redux, HTML, CSS, JavaScript, Chakra-UI, Chart.js components.
 
 ## Getting Started
 
@@ -43,12 +43,23 @@ npm run build
 This command builds the app for production to the build folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
 <h2>Features</h2> <br/>
-React: A JavaScript library for building user interfaces.<br/>
-Redux: State management library for managing application state.<br/>
-HTML, CSS, JavaScript: Core web technologies for building the frontend.<br/>
-Chakra-UI: A simple, modular, and accessible component library for React.<br/>
-Chart.js: Simple yet flexible JavaScript charting library for designers and developers.<br/>
-Tables: Included tables for displaying structured data.<br/>
+1. **User Interface with React:**
+   - Employs React, a powerful JavaScript library, to create a dynamic and interactive user interface.
+  
+2. **State Management with Redux:**
+   - Utilizes Redux for effective state management, ensuring a centralized and predictable data flow in the application.
+
+3. **Web Technologies Stack:**
+   - Leverages HTML, CSS, and JavaScript, the foundational technologies of the web, to build a robust and responsive frontend.
+
+4. **Modular and Accessible UI Components:**
+   - Integrates Chakra-UI, a modular and accessible component library for React, to facilitate the development of stylish and user-friendly interfaces.
+
+5. **Interactive Data Visualization with Chart.js:**
+   - Incorporates Chart.js, a versatile JavaScript charting library, to create visually appealing and interactive charts for data representation.
+
+6. **Structured Data Display through Tables:**
+   - Implements tables for presenting structured data in a clear and organized manner, enhancing the user experience with well-organized information.
 <br/><br/>
 
 <h2>Some Screenshots of the website-</h2>
