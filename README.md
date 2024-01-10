@@ -1,5 +1,5 @@
 <h1>PETERS SURGICAL</h1>
-<h2>Live Link-  </h2> 
+<h2>Live Link- https://assignment-seven-coral.vercel.app/ </h2> 
 <h3>Project Presentation Link - </h3>
 
 # Peter Surgical React App
@@ -63,6 +63,6 @@ This command builds the app for production to the build folder. It correctly bun
 <br/><br/>
 
 <h2>Some Screenshots of the website-</h2>
-<img src='https://i.ibb.co/ZSzr33d/Screenshot-2024-01-05-133631.png' alt='img' />
-<img src='https://i.ibb.co/MPbvFKc/Screenshot-2024-01-05-133940.png' alt='img' />
-<img src='https://i.ibb.co/tsfT7ZW/Screenshot-2024-01-05-134608.png' alt='img' />
+<img src='![Alt text](image.png)' alt='img' />
+<img src='![Alt text](image-1.png)' alt='img' />
+<img src='![Alt text](image-2.png)' alt='img' />
