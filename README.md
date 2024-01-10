@@ -63,6 +63,11 @@ This command builds the app for production to the build folder. It correctly bun
 <br/><br/>
 
 <h2>Some Screenshots of the website-</h2>
+![image](https://github.com/pankajsbisht143/assignment/assets/125855262/deb14376-01ec-45bd-9937-68c64aee35df)
+![image](https://github.com/pankajsbisht143/assignment/assets/125855262/3dcef6a9-991c-4c98-9c83-96c756bfc893)
+![image](https://github.com/pankajsbisht143/assignment/assets/125855262/451295f9-81db-4691-be0b-918bab873f72)
+
+
 <img src='![Alt text](image.png)' alt='img' />
 <img src='![Alt text](image-1.png)' alt='img' />
 <img src='![Alt text](image-2.png)' alt='img' />
