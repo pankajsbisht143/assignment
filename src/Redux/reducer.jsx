@@ -34,6 +34,9 @@ const initialState = {
   pie_data:data
 };
 
+
+
+
 export const userReducer = (state = initialState, { type, payload }) => {
     switch (type) {
        case CHANGE_DATA: 

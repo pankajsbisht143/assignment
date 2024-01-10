@@ -659,7 +659,6 @@ tbody tr:hover {
   table {
     width: 50%;
     overflow-x: auto;
-    /* Add horizontal scrollbar if needed */
   }
 
   th,
@@ -678,6 +677,10 @@ tbody tr:hover {
     margin-bottom: 15px;
   }
 
+
+
+
+  
   tbody td {
     text-align: left;
   }
