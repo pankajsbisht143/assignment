@@ -13,7 +13,7 @@ const Table = () => {
         <th>Month</th>
         <th>Supplier</th>
         <th>Revenue(IN CO2E)</th>
-        <th>Emission/Revenue Ratio</th>
+        <th>YOY Revenue R/E</th>
       </tr>
     </thead>
     <tbody>

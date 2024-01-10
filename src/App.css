@@ -1,11 +1,11 @@
-.sidebarDiv {
+.sidebar {
   position: fixed;
   width: 249px;
   background: #181818;
   height: 100%;
 }
 
-.logoDiv>img {
+.logo>img {
   width: 128px;
   height: 47px;
   flex-shrink: 0;
@@ -70,7 +70,7 @@
   font-weight: 600;
 }
 
-.logoDiv {
+.logo {
   border-bottom: 1px solid #000;
   display: flex;
 
@@ -79,7 +79,7 @@
   gap: 5px;
 }
 
-.menu {
+.menubar {
   display: flex;
   width: 249px;
   padding: 10px 15px 15px 15px;
@@ -90,7 +90,7 @@
   border-bottom: 1px solid #2C2C2C;
 }
 
-.menu>h2 {
+.menubar>h2 {
   color: #5C5C5C;
 
   font-feature-settings: 'clig' off, 'liga' off;
@@ -194,7 +194,7 @@
   border-radius: 32px;
 }
 
-.sp {
+.space {
   color: white;
   background-color: red;
   width: 15px;
@@ -214,7 +214,7 @@
   position: relative;
 }
 
-.first {
+.first1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -234,7 +234,7 @@
   box-shadow: 0px 0.599px 5.32px 0px rgba(0, 0, 0, 0.01), 0px 2.01px 17.869px 0px rgba(0, 0, 0, 0.01), 0px 9px 80px 0px rgba(0, 0, 0, 0.02);
 }
 
-.firstP {
+.firstPsb {
   color: black;
   display: flex;
   gap: 3px;
@@ -276,7 +276,7 @@
   margin-left: 17px;
 }
 
-.upchart {
+.chart1 {
   width: 100%;
   height: 654px;
   flex-shrink: 0;
@@ -303,6 +303,7 @@
   border: 1px solid #EBEBEB;
   background: rgba(2, 171, 108, 0.67);
   box-shadow: 0px 0.599px 5.32px 0px rgba(0, 0, 0, 0.01), 0px 2.01px 17.869px 0px rgba(0, 0, 0, 0.01), 0px 9px 80px 0px rgba(0, 0, 0, 0.02);
+  margin: auto;
 }
 
 .firstL>p:nth-child(1) {
@@ -336,7 +337,7 @@
   align-self: stretch;
 }
 
-.inp {
+.input {
   display: flex;
 
   height: 32px;
@@ -364,7 +365,7 @@
   margin-bottom: 5px;
 }
 
-.inp>p {
+.input>p {
   color: grey;
 }
 
@@ -461,22 +462,29 @@ td {
   border-right: 1px solid #ddd;
 }
 
-/* Alternate row background color for better readability */
 
-
-/* Hover effect for better user interaction */
 tbody tr:hover {
   background-color: #e0e0e0;
 }
 
-.nut {
+.nuty {
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   margin: 30px;
-
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  /* gap: 40px; */
+} 
+.dough{
+  margin-top:30px;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
+  /* width: 503px;
+  height: 307.482px; */
 }
-
 .red {
   color: red
 }
@@ -486,7 +494,7 @@ tbody tr:hover {
 }
 
 
-.final {
+.finalchart {
   display: flex;
   width: 600px;
   height: 48px;
@@ -499,7 +507,7 @@ tbody tr:hover {
 
 }
 
-.final>div:nth-child(1)>p {
+.finalchart>div:nth-child(1)>p {
   display: flex;
   gap: 3px;
   font-size: 17px;
@@ -535,19 +543,19 @@ tbody tr:hover {
   border-color: white white white rgb(210, 209, 209);
 }
 
-.nut>:nth-child(2) {
+.nuty>:nth-child(2) {
   margin-top: 20px;
 }
 
 
 @media screen and (max-width: 1400px) {
-  .sp {
+  .space {
     display: none;
   }
 }
 
 @media screen and (max-width: 1130px) {
-  .nut {
+  .nuty {
     flex-direction: column;
     align-items: center;
     gap: 50px;
@@ -555,23 +563,23 @@ tbody tr:hover {
 }
 
 @media screen and (max-width:1091px) {
-  .first {
+  .first1 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 
 @media screen and (max-width:603px) {
-  .sidebarDiv {
+  .sidebar {
     width: 200px;
   }
 
-  .menu {
+  .menubar {
     width: 200px;
 
   }
 
-  .menu>h2 {
+  .menubar>h2 {
     width: 200px;
   }
 
@@ -586,11 +594,11 @@ tbody tr:hover {
 }
 
 @media screen and (max-width:450px) {
-  .first {
+  .first1 {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .sidebarDiv {
+  .sidebar {
     display: none;
     border: 2px solid black;
     background-color: gray;
@@ -605,7 +613,7 @@ tbody tr:hover {
     display: block;
   }
 
-  .final {
+  .finalchart {
     width: 100%;
   }
 
@@ -613,7 +621,7 @@ tbody tr:hover {
     width: 100%;
   }
 
-  .nut {
+  .nuty {
     width: 100%;
 
     margin: 0;

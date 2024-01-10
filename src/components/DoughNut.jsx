@@ -14,7 +14,7 @@ import { useSelector } from "react-redux";
 import Table from "./Table";
 import { Flex } from "@chakra-ui/react";
 
-const PieGraph = () => {
+const DoughNut = () => {
   const downloadTableData = () => {
     const tableData = [
       ['Month', 'Supplier', 'Revenue(IN CO2E)', 'Emission/Revenue Ratio'],
@@ -37,13 +37,27 @@ const PieGraph = () => {
 
 
   const files = useSelector((state) => state.pie_data);
+  const data22 = files?.filter((ele) => {
+    return ele.Year === 2023
+  })
+  const aggregatedData = data22?.reduce((accumulator, currentValue) => {
+    const supplierName = currentValue.Supplier;
+    accumulator[supplierName] = (accumulator[supplierName] || 0) + currentValue.Emissions;
+    return accumulator;
+  }, {});
+
+  // Convert aggregated data to chart format
+  const labels1 = Object.keys(aggregatedData || {});
+  const CO2E1 = Object.values(aggregatedData || {});
+  // console.log(labels1)
+  // console.log(CO2E1)
   let Emiision = files?.map((ele) => ele.Emissions);
-  
+  console.log(data22)
   const [CO2E, setCo2E] = useState(Emiision);
-  
+
   useEffect(() => {
     let Emiision = files?.map((ele) => ele.Emissions);
-   
+
     setCo2E(Emiision);
   }, [files]);
 
@@ -62,26 +76,18 @@ const PieGraph = () => {
 
 
   const [data, setData] = useState({
-    labels: labels,
+    labels: labels1,
     datasets: [
       {
         label: "Emmissions",
-        data: CO2E,
+        data: CO2E1,
         borderWidth: 1,
-        backgroundColor: ["#7C95EA", "#FFC400", "#3BB85E", "#E994B1", "red","black","blue","indigo","aqua"],
+        backgroundColor: ["#7C95EA", "#FFC400", "#3BB85E", "#E994B1", "red", "black", "blue", "indigo", "aqua"],
         hoverOffset: 30,
       },
     ],
   });
-  const options = {
-    aspectRatio: 1, // Adjust the aspect ratio as needed
-    responsive: true,
-    plugins: {
-      legend: {
-        position: 'right', // You can adjust the legend position
-      },
-    },
-  };
+
   ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -93,29 +99,21 @@ const PieGraph = () => {
   );
 
   return (
-    <div className="nut">
-      <div className="doug">
+    <div className="nuty">
+
+      <div>
         <div>
-          <div>
-            <p>Emission by Supplier</p>
-          </div>
-          <Doughnut data={data} 
-          options={{
-            ...options,
-            plugins: {
-              legend: {
-                position: 'right',
-              },
-            },
-            // You can set the width and height directly
-            width: 400, // Adjust the width as needed
-            height: 400, // Adjust the height as needed
-          }}/>
+          <p>Emission by Supplier</p>
         </div>
+        <div className="dough">
+          <Doughnut data={data}
+          />
+        </div>
+
       </div>
 
       <div>
-        <div className="final">
+        <div className="finalchart">
           <div>
             <p>
               Supplier-wise
@@ -147,4 +145,4 @@ const PieGraph = () => {
   );
 };
 
-export default PieGraph;
+export default DoughNut;

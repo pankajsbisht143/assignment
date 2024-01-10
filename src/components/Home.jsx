@@ -1,16 +1,21 @@
 import { Container, Flex, Image } from "@chakra-ui/react";
 import React from "react";
 import Chart from "./Chart";
-import PieGraph from "./Pie";
 import { DataObj } from "../Redux/data";
 import { useDispatch } from "react-redux";
 import { CHANGE_DATA } from "../Redux/Actiontype";
+import DoughNut from "./DoughNut";
 
 const Home = ({ category }) => {
   const dispatch = useDispatch()
+  // const changeDate = (e) => {
+  // const dispatch = useDispatch();
+
   const changeDate = (e) => {
     let payload = DataObj[e.target.value];
+    console.log(payload)
     let emmissions = payload?.map((ele) => ele.Emissions)
+    console.log(emmissions)
     let revenue = payload?.map((ele) => ele.Revenue)
     dispatch({ type: CHANGE_DATA, payload: { emmissions, revenue } })
   }
@@ -89,27 +94,27 @@ const Home = ({ category }) => {
               fill-opacity="0.84"
             />
           </svg>
-          <span className="sp">1</span>
+          <span className="space">1</span>
         </div>
       </div>
 
       <Flex justifyContent={'end'} width={'full'} pt={'10px'}>
-        <div className="inp">
+        <div className="input">
           <p>Show Timeline:</p>
           <select onChange={changeDate} className="select">
-            <option value='data1'>Jan'23 - Feb'23</option>
-            <option value='data2'>May'23 - Sep'23</option>
-            <option value='data1'>Jan'22 - Feb'22</option>
-            <option value='data2'>May'22 - Jun'22</option>
+            <option value="data">Jan'23 - Feb'23</option>
+            <option value="data1">May'23 - Sep'23</option>
+            <option value="data">Jan'22 - Feb'22</option>
+            <option value="data1">May'22 - Jun'22</option>
           </select>
         </div>
       </Flex>
 
 
-      <div className="upchart">
-        <div className="first">
+      <div className="chart1">
+        <div className="first1">
           <div className="first_one">
-            <p className="firstP">
+            <p className="firstPsb">
               Purchased goods and Services{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -142,7 +147,7 @@ const Home = ({ category }) => {
               />
             </div>
           </div>
-          
+
           <div className="first_one">
             <p className="firstPP">
               Purchased good and services to revenue ratio{" "}
@@ -177,9 +182,9 @@ const Home = ({ category }) => {
             </div>
           </div>
 
-          
+
           <div className="first_one">
-            <p className="firstP">
+            <p className="firstPsb">
               {category}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -219,7 +224,7 @@ const Home = ({ category }) => {
           </div>
         </div>
         <Chart />
-        <PieGraph />
+        <DoughNut />
       </div>
 
     </div>

@@ -4,11 +4,11 @@ import React from 'react'
 const Sidebar = ({ setCategory }) => {
 
   return (
-    <div className='sidebarDiv'>
-      <div className='logoDiv'>
+    <div className='sidebar'>
+      <div className='logo'>
         <img src='https://res.cloudinary.com/dusavcufz/image/upload/v1704354159/snywsnhkexzodnlrltdg.png' alt='image' />
       </div>
-      <div className='menu'>
+      <div className='menubar'>
         <h2>
           DATA-IN
         </h2>
@@ -69,7 +69,7 @@ const Sidebar = ({ setCategory }) => {
           </Menu>
         </Container>
       </div>
-      <div className='menu'>
+      <div className='menubar'>
         <h2>
           Analyze
         </h2>

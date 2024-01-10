@@ -2,7 +2,7 @@ import { Button, Container, Drawer, DrawerBody, DrawerCloseButton, DrawerContent
 
 import React, { useRef } from 'react'
 
-const ResNav = () => {
+const ResponsiveNav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRefernce = useRef()
   return (
@@ -34,7 +34,7 @@ const ResNav = () => {
             </DrawerHeader>
 
             <DrawerBody background={'rgb(24,24,24)'}>
-              <div className='menu'>
+              <div className='menubar'>
                 <h2>
                   DATA-IN
                 </h2>
@@ -61,10 +61,10 @@ const ResNav = () => {
                     </MenuButton>
                     <MenuList>
                       <MenuItem>Category 1</MenuItem>
-                      <MenuItem>Category 3</MenuItem>
                       <MenuItem>Category 4</MenuItem>
                       <MenuItem>Category 6</MenuItem>
                       <MenuItem>Category 7</MenuItem>
+                      <MenuItem>Category 8</MenuItem>
                     </MenuList>
                   </Menu>
                 </Container>
@@ -130,4 +130,4 @@ const ResNav = () => {
   )
 }
 
-export default ResNav
+export default ResponsiveNav
