@@ -206,9 +206,6 @@ export const data = [
     Revenue: 354646,
     ER: 144.6,
   },
-];
-
-export const data2=[
   {
     Date: '2/4/23',
     Month: 'Apr',
@@ -353,7 +350,11 @@ export const data2=[
     Revenue: 354646,
     ER: 144.6,
   },
-]
+];
+
+// export const data2=[
+  
+// ]
 
 
 
