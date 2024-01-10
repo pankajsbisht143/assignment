@@ -99,6 +99,9 @@ const Sidebar = ({ setCategory }) => {
         </Flex>
       </div>
 
+
+
+
       <div className='sideBut'>
         <button>Open Help Center</button>
       </div>
