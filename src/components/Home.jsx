@@ -101,7 +101,7 @@ const Home = ({ category }) => {
       <Flex justifyContent={'end'} width={'full'} pt={'10px'}>
         <div className="input">
           <p>Show Timeline:</p>
-          <select onChange={changeDate} className="select">
+          <select onChange={changeDate} className="selection">
             <option value="data">Jan'23 - Feb'23</option>
             <option value="data1">May'23 - Sep'23</option>
             <option value="data">Jan'22 - Feb'22</option>

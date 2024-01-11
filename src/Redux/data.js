@@ -188,6 +188,10 @@ export const data = [
     Revenue: 576855,
     ER: 163.2,
   },
+  
+];
+
+export const data2=[
   {
     Date: '1/12/22',
     Month: 'Dec',
@@ -350,18 +354,14 @@ export const data = [
     Revenue: 354646,
     ER: 144.6,
   },
-];
-
-// export const data2=[
-  
-// ]
+]
 
 
 
 
 export const DataObj={
   data:data,
- 
-   data1:data2
+  data1:data2
+   
 
 }

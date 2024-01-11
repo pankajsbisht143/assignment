@@ -75,6 +75,8 @@ const DoughNut = () => {
   ];
 
 
+  
+
   const [data, setData] = useState({
     labels: labels1,
     datasets: [

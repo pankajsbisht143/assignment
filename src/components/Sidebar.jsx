@@ -102,7 +102,7 @@ const Sidebar = ({ setCategory }) => {
 
 
 
-      <div className='sideBut'>
+      <div className='side'>
         <button>Open Help Center</button>
       </div>
     </div>

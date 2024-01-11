@@ -10,7 +10,7 @@ const Table = () => {
     <thead>
       <tr>
         <th>Month</th>
-        <th>Supplier</th>
+        <th>EMISSION(IN CO2E)</th>
         <th>Revenue(IN CO2E)</th>
         <th>YOY Revenue R/E</th>
       </tr>
